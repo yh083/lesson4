@@ -1,24 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vjZ-pU-mMT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--首页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="首页" id="kfO-5p-nPa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1244" y="-564"/>
+        </scene>
+        <!--推荐-->
+        <scene sceneID="zx5-8u-d0m">
+            <objects>
+                <viewController id="Xhb-Pp-8rv" customClass="RecommendViewController" customModule="lesson4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ead-XA-Gv9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-yC-27y">
+                                <rect key="frame" x="20" y="84" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9Hu-jK-tYY"/>
+                                    <constraint firstAttribute="height" constant="80" id="AEb-0O-nDP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="theplace_coffee_logo.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vi-Xe-wEO">
+                                <rect key="frame" x="147.5" y="84" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4BL-r1-OKW"/>
+                                    <constraint firstAttribute="width" constant="80" id="j4O-JH-iJ5"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="starbucks_coffee_logo.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHf-c7-mPW">
+                                <rect key="frame" x="275" y="84" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="acV-kh-WV4"/>
+                                    <constraint firstAttribute="width" constant="80" id="sqv-x9-BBy"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="man_coffee_logo.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4H-tx-8tu">
+                                <rect key="frame" x="20" y="184" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZvF-0z-Z0a"/>
+                                    <constraint firstAttribute="width" constant="80" id="eMr-kH-PyO"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="goodwoods_coffee_logo.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSA-hR-n9d">
+                                <rect key="frame" x="147.5" y="184" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="SnO-lN-fqL"/>
+                                    <constraint firstAttribute="width" constant="80" id="mVW-Zx-YoU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="winshare_logo.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Vi-Xe-wEO" firstAttribute="centerX" secondItem="2CW-1o-Dti" secondAttribute="centerX" id="1Pb-yl-7zj"/>
+                            <constraint firstItem="8Vi-Xe-wEO" firstAttribute="top" secondItem="2CW-1o-Dti" secondAttribute="top" constant="20" id="3xB-ym-u0n"/>
+                            <constraint firstItem="t4H-tx-8tu" firstAttribute="top" secondItem="gF6-yC-27y" secondAttribute="bottom" constant="20" id="7az-pL-KOy"/>
+                            <constraint firstItem="gHf-c7-mPW" firstAttribute="top" secondItem="2CW-1o-Dti" secondAttribute="top" constant="20" id="GsT-IP-Leo"/>
+                            <constraint firstItem="gF6-yC-27y" firstAttribute="leading" secondItem="2CW-1o-Dti" secondAttribute="leading" constant="20" id="NCW-Ot-LMJ"/>
+                            <constraint firstItem="cSA-hR-n9d" firstAttribute="centerX" secondItem="2CW-1o-Dti" secondAttribute="centerX" id="ONl-YS-zS8"/>
+                            <constraint firstItem="cSA-hR-n9d" firstAttribute="top" secondItem="8Vi-Xe-wEO" secondAttribute="bottom" constant="20" id="dTw-QU-d1W"/>
+                            <constraint firstItem="gF6-yC-27y" firstAttribute="top" secondItem="2CW-1o-Dti" secondAttribute="top" constant="20" id="ddi-FW-T17"/>
+                            <constraint firstItem="t4H-tx-8tu" firstAttribute="leading" secondItem="2CW-1o-Dti" secondAttribute="leading" constant="20" id="nr6-FP-IUD"/>
+                            <constraint firstItem="2CW-1o-Dti" firstAttribute="trailing" secondItem="gHf-c7-mPW" secondAttribute="trailing" constant="20" id="uHy-RK-xeu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2CW-1o-Dti"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="推荐" id="4bX-dd-JBT"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="gF6-yC-27y" collectionClass="NSMutableArray" id="EoX-eD-xK8"/>
+                        <outletCollection property="buttons" destination="8Vi-Xe-wEO" collectionClass="NSMutableArray" id="nuR-2z-out"/>
+                        <outletCollection property="buttons" destination="gHf-c7-mPW" collectionClass="NSMutableArray" id="yCC-NG-eaS"/>
+                        <outletCollection property="buttons" destination="t4H-tx-8tu" collectionClass="NSMutableArray" id="TER-qQ-yQq"/>
+                        <outletCollection property="buttons" destination="cSA-hR-n9d" collectionClass="NSMutableArray" id="OcH-zV-GTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVT-5H-SiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="170"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vg5-1s-dKv">
+            <objects>
+                <tabBarController id="vjZ-pU-mMT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eqY-bS-tS5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nfX-RX-uEL" kind="relationship" relationship="viewControllers" id="FoZ-TB-gxd"/>
+                        <segue destination="2za-zt-P5Y" kind="relationship" relationship="viewControllers" id="SMd-Uc-yNB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOK-M3-gC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1278" y="-60"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TjV-g6-p4d">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fF8-4d-hVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nfX-RX-uEL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="E6I-Xi-fHt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ahM-Ug-LD8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TCC-X8-h9I"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-564.46776611694156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5ZG-z5-1nP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2za-zt-P5Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="mu4-6K-fWR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EdI-8E-Lot">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xhb-Pp-8rv" kind="relationship" relationship="rootViewController" id="pZj-B1-Ucm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="al6-Nk-Y7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="251"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goodwoods_coffee_logo.png" width="400" height="400"/>
+        <image name="man_coffee_logo.png" width="400" height="400"/>
+        <image name="starbucks_coffee_logo.png" width="267" height="267"/>
+        <image name="theplace_coffee_logo.png" width="322" height="322"/>
+        <image name="winshare_logo.png" width="417" height="408"/>
+    </resources>
 </document>
